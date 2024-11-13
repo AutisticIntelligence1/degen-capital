@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from 'react';
 import { Gem, Lock, Users, Eye, Users2, Target } from 'lucide-react';
 
@@ -105,7 +107,6 @@ const DegenCapital = () => {
             </div>
           </div>
         </header>
-
         {/* Key Features Section */}
         <section className="py-16">
           <div className="container mx-auto px-6">
@@ -153,7 +154,94 @@ const DegenCapital = () => {
           </div>
         </section>
 
-        {/* Rest of the component remains the same... */}
+        {/* Revenue Participation */}
+        <section className="py-16">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Mr. D NFT Collection</h2>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <div className="p-6 rounded-xl bg-gray-800">
+                  <h3 className="text-xl font-bold text-green-400 mb-4">NFT Benefits</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start space-x-3">
+                      <Gem className="h-6 w-6 text-green-400 flex-shrink-0 mt-1" />
+                      <span>Access to investment revenue distributions</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <Lock className="h-6 w-6 text-green-400 flex-shrink-0 mt-1" />
+                      <span>Automatic revenue sharing without manual claims</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <Users className="h-6 w-6 text-green-400 flex-shrink-0 mt-1" />
+                      <span>Future governance participation rights</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="p-6 rounded-xl bg-gray-800">
+                  <h3 className="text-xl font-bold text-green-400 mb-2">NFT Price</h3>
+                  <p className="text-3xl font-bold">150 $DGC</p>
+                  <p className="text-gray-400 mt-2">All proceeds burned to reduce supply</p>
+                </div>
+              </div>
+              <div className="p-8 rounded-xl bg-gray-800">
+                <h3 className="text-xl font-bold text-green-400 mb-6">Profit Distribution</h3>
+                <div className="space-y-6">
+                  <div className="flex items-center justify-between p-4 rounded-lg bg-gray-700">
+                    <span>NFT Holders</span>
+                    <span className="text-xl font-bold text-green-400">50%</span>
+                  </div>
+                  <div className="flex items-center justify-between p-4 rounded-lg bg-gray-700">
+                    <span>Reinvestment</span>
+                    <span className="text-xl font-bold text-green-400">35%</span>
+                  </div>
+                  <div className="flex items-center justify-between p-4 rounded-lg bg-gray-700">
+                    <span>Team</span>
+                    <span className="text-xl font-bold text-green-400">15%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Tokenomics */}
+        <section className="py-16 bg-gray-900">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Tokenomics</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="p-8 rounded-xl bg-gray-800">
+                <h3 className="text-xl font-bold text-center mb-6">Transaction Tax: 4%</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between p-4 rounded-lg bg-gray-700">
+                    <span>DGC Wallet</span>
+                    <span className="font-bold text-green-400">2%</span>
+                  </div>
+                  <div className="flex items-center justify-between p-4 rounded-lg bg-gray-700">
+                    <span>Liquidity Pool</span>
+                    <span className="font-bold text-green-400">1%</span>
+                  </div>
+                  <div className="flex items-center justify-between p-4 rounded-lg bg-gray-700">
+                    <span>Team</span>
+                    <span className="font-bold text-green-400">1%</span>
+                  </div>
+                </div>
+              </div>
+              <div className="p-8 rounded-xl bg-gray-800">
+                <h3 className="text-xl font-bold mb-6">Token Details</h3>
+                <div className="space-y-6">
+                  <div className="text-center p-6 rounded-lg bg-gray-700">
+                    <p className="text-gray-400 mb-2">Max Supply</p>
+                    <p className="text-3xl font-bold text-green-400">1,000,000 $DGC</p>
+                  </div>
+                  <div className="text-center p-6 rounded-lg bg-gray-700">
+                    <p className="text-gray-400 mb-2">LP Status</p>
+                    <p className="text-3xl font-bold text-green-400">100% Burned</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <footer className="py-8 border-t border-gray-800">
           <div className="container mx-auto px-6 text-center text-gray-400">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wallet2, ChartBar, Lock, Users, Banknote, Gem } from 'lucide-react';
+import { Gem, Lock, Users } from 'lucide-react';
 
 const DegenCapital = () => {
   return (
@@ -19,7 +19,7 @@ const DegenCapital = () => {
                 <span className="text-2xl font-bold text-green-400">Degen Capital</span>
               </div>
               <div className="flex items-center space-x-4">
-                <a href="https://t.me/degencapital" target="_blank" rel="noopener noreferrer"
+                <a href="https://t.me/c/2155564902/39783" target="_blank" rel="noopener noreferrer"
                    className="hover:text-green-400 transition-colors">
                   <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 8.12L16.17 18c-.15.65-.56.85-1.13.53l-3.14-2.31-1.51 1.46c-.17.17-.31.31-.64.31l.23-3.21L14.7 10c.19-.18-.04-.28-.3-.1l-6.07 3.83L5.2 12.7c-.64-.2-.65-.64.13-.95l15.39-5.93c.53-.2 1 .13.83.7z" />

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Gem, Lock, Users, Eye, Users2, Target } from 'lucide-react';
+import { Gem, Lock, Users, Eye, Users2, Target, TrendingUp, BarChart2, Award } from 'lucide-react';
 
 const DegenCapital = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -10,6 +10,18 @@ const DegenCapital = () => {
     minutes: 0,
     seconds: 0
   });
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setIsVisible(offset > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     const calculateTimeLeft = () => {
@@ -38,11 +50,33 @@ const DegenCapital = () => {
     { label: 'Seconds', value: timeLeft.seconds }
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const recentUpdates = [
+    { date: 'Nov 10', text: 'New partnership announcement coming soon' },
+    { date: 'Nov 8', text: 'Community AMA scheduled for next week' },
+    { date: 'Nov 5', text: 'Latest investment performance report released' }
+  ];
+
   return (
       <div className="min-h-screen bg-gray-950 text-white">
+        {/* Back to top button */}
+        <button
+            onClick={scrollToTop}
+            className={`fixed bottom-8 right-8 bg-green-600 p-4 rounded-full shadow-lg transition-opacity duration-300 z-50 ${
+                isVisible ? 'opacity-100' : 'opacity-0'
+            }`}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </button>
+
         {/* Header/Hero Section */}
         <header className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-green-900/20 to-emerald-900/20 animate-pulse"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-green-900/20 to-emerald-900/20"></div>
           <nav className="relative z-10 container mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-2">
@@ -72,12 +106,25 @@ const DegenCapital = () => {
           </nav>
 
           <div className="relative container mx-auto px-6 pt-20 pb-24 text-center">
-            <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent animate-gradient">
+            <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
               Expert-Led Investment Community
             </h1>
             <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
               Led by seasoned experts with a proven track record of identifying early-stage opportunities before they become mainstream successes.
             </p>
+
+            {/* Recent Updates Section */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-green-400 mb-4">Recent Updates</h2>
+              <div className="max-w-2xl mx-auto bg-gray-800 rounded-xl p-4">
+                {recentUpdates.map((update, index) => (
+                    <div key={index} className="flex items-center space-x-4 py-2 border-b border-gray-700 last:border-0">
+                      <span className="text-sm text-gray-400">{update.date}</span>
+                      <span className="text-white">{update.text}</span>
+                    </div>
+                ))}
+              </div>
+            </div>
 
             {/* Countdown Timer */}
             <div className="mb-12">

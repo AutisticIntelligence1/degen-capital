@@ -182,6 +182,21 @@ const DegenCapital = () => {
           </div>
         </section>
 
+        {/* Portfolio Tracking Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Live Portfolio Overview</h2>
+            <div className="rounded-xl overflow-hidden border border-green-500/20">
+              <iframe
+                  src="https://debank.com/profile/0x9fb76d37de2ed2c1b339fc4451044aff33049a8a"
+                  className="w-full"
+                  style={{ height: '800px' }}
+                  title="Degen Capital Portfolio"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Revenue Participation */}
         <section className="py-16">
           <div className="container mx-auto px-6">

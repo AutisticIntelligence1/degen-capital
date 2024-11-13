@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Gem, Lock, Users, Eye, Users2, Target, TrendingUp, BarChart2, Award } from 'lucide-react';
+import { Gem, Lock, Users, Eye, Users2, Target } from 'lucide-react';
 
 const DegenCapital = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -53,12 +53,6 @@ const DegenCapital = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  const recentUpdates = [
-    { date: 'Nov 10', text: 'New partnership announcement coming soon' },
-    { date: 'Nov 8', text: 'Community AMA scheduled for next week' },
-    { date: 'Nov 5', text: 'Latest investment performance report released' }
-  ];
 
   return (
       <div className="min-h-screen bg-gray-950 text-white">
@@ -112,19 +106,6 @@ const DegenCapital = () => {
             <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
               Led by seasoned experts with a proven track record of identifying early-stage opportunities before they become mainstream successes.
             </p>
-
-            {/* Recent Updates Section */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-green-400 mb-4">Recent Updates</h2>
-              <div className="max-w-2xl mx-auto bg-gray-800 rounded-xl p-4">
-                {recentUpdates.map((update, index) => (
-                    <div key={index} className="flex items-center space-x-4 py-2 border-b border-gray-700 last:border-0">
-                      <span className="text-sm text-gray-400">{update.date}</span>
-                      <span className="text-white">{update.text}</span>
-                    </div>
-                ))}
-              </div>
-            </div>
 
             {/* Countdown Timer */}
             <div className="mb-12">

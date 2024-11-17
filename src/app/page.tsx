@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import { Gem, Lock, Users, Eye, Users2, Target } from 'lucide-react';
+import React, {useState, useEffect} from 'react';
+import {Gem, Lock, Users, Eye, Users2, Target} from 'lucide-react';
 
 const DegenCapital = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -44,19 +44,18 @@ const DegenCapital = () => {
   }, []);
 
   const stats = [
-    { label: 'Days', value: timeLeft.days },
-    { label: 'Hours', value: timeLeft.hours },
-    { label: 'Minutes', value: timeLeft.minutes },
-    { label: 'Seconds', value: timeLeft.seconds }
+    {label: 'Days', value: timeLeft.days},
+    {label: 'Hours', value: timeLeft.hours},
+    {label: 'Minutes', value: timeLeft.minutes},
+    {label: 'Seconds', value: timeLeft.seconds}
   ];
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({top: 0, behavior: 'smooth'});
   };
 
   return (
       <div className="min-h-screen bg-gray-950 text-white">
-        {/* Back to top button */}
         <button
             onClick={scrollToTop}
             className={`fixed bottom-8 right-8 bg-green-600 p-4 rounded-full shadow-lg transition-opacity duration-300 z-50 ${
@@ -64,21 +63,20 @@ const DegenCapital = () => {
             }`}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18"/>
           </svg>
         </button>
 
-        {/* Header/Hero Section */}
         <header className="relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-green-900/20 to-emerald-900/20"></div>
           <nav className="relative z-10 container mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-2">
                 <svg viewBox="0 0 50 50" className="h-12 w-12">
-                  <circle cx="25" cy="20" r="15" fill="#10B981" />
-                  <rect x="10" y="18" width="30" height="8" fill="black" />
-                  <circle cx="35" cy="22" r="2" fill="#10B981" />
-                  <path d="M15 35 L35 35 L32 45 L18 45 Z" fill="#10B981" />
+                  <circle cx="25" cy="20" r="15" fill="#10B981"/>
+                  <rect x="10" y="18" width="30" height="8" fill="black"/>
+                  <circle cx="35" cy="22" r="2" fill="#10B981"/>
+                  <path d="M15 35 L35 35 L32 45 L18 45 Z" fill="#10B981"/>
                 </svg>
                 <span className="text-2xl font-bold text-green-400">Degen Capital</span>
               </div>
@@ -86,32 +84,33 @@ const DegenCapital = () => {
                 <a href="https://t.me/+IzONJHxUmdY2ZmRk" target="_blank" rel="noopener noreferrer"
                    className="hover:text-green-400 transition-colors">
                   <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 8.12L16.17 18c-.15.65-.56.85-1.13.53l-3.14-2.31-1.51 1.46c-.17.17-.31.31-.64.31l.23-3.21L14.7 10c.19-.18-.04-.28-.3-.1l-6.07 3.83L5.2 12.7c-.64-.2-.65-.64.13-.95l15.39-5.93c.53-.2 1 .13.83.7z" />
+                    <path
+                        d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 8.12L16.17 18c-.15.65-.56.85-1.13.53l-3.14-2.31-1.51 1.46c-.17.17-.31.31-.64.31l.23-3.21L14.7 10c.19-.18-.04-.28-.3-.1l-6.07 3.83L5.2 12.7c-.64-.2-.65-.64.13-.95l15.39-5.93c.53-.2 1 .13.83.7z"/>
                   </svg>
                 </a>
                 <a href="https://x.com" target="_blank" rel="noopener noreferrer"
                    className="hover:text-green-400 transition-colors">
                   <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                   </svg>
                 </a>
               </div>
             </div>
           </nav>
-
           <div className="relative container mx-auto px-6 pt-20 pb-24 text-center">
             <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
               Expert-Led Investment Community
             </h1>
             <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
-              Led by seasoned experts with a proven track record of identifying early-stage opportunities before they become mainstream successes.
+              Led by seasoned experts with a proven track record of identifying early-stage opportunities before they
+              become mainstream successes.
             </p>
 
-            {/* Countdown Timer */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-green-400 mb-4">NFT Launch Countdown</h2>
               <div className="grid grid-cols-4 gap-4 max-w-2xl mx-auto">
-                {stats.map(({ label, value }) => (
+                {stats.map(({label, value}) => (
                     <div key={label} className="p-4 rounded-xl bg-gray-800 border border-green-500/20">
                       <div className="text-3xl font-bold text-green-400">{value}</div>
                       <div className="text-sm text-gray-400">{label}</div>
@@ -121,7 +120,8 @@ const DegenCapital = () => {
             </div>
 
             <div className="flex justify-center space-x-4">
-              <button className="bg-gradient-to-r from-green-600 to-emerald-600 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 hover:shadow-lg hover:shadow-green-500/20">
+              <button
+                  className="bg-gradient-to-r from-green-600 to-emerald-600 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 hover:shadow-lg hover:shadow-green-500/20">
                 Buy $DGC
               </button>
               <a
@@ -135,23 +135,27 @@ const DegenCapital = () => {
             </div>
           </div>
         </header>
-        {/* Key Features Section */}
+
         <section className="py-16">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Why Choose Degen Capital?</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors">
-                <Eye className="h-12 w-12 text-green-400 mb-4" />
+              <div
+                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors">
+                <Eye className="h-12 w-12 text-green-400 mb-4"/>
                 <h3 className="text-xl font-bold mb-4">Expert Analysis</h3>
-                <p className="text-gray-400">Seasoned professionals identifying high-potential projects before they gain widespread attention</p>
+                <p className="text-gray-400">Seasoned professionals identifying high-potential projects before they gain
+                  widespread attention</p>
               </div>
-              <div className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors">
-                <Target className="h-12 w-12 text-green-400 mb-4" />
+              <div
+                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors">
+                <Target className="h-12 w-12 text-green-400 mb-4"/>
                 <h3 className="text-xl font-bold mb-4">Strategic Entry</h3>
                 <p className="text-gray-400">Perfect timing for maximum returns on carefully selected opportunities</p>
               </div>
-              <div className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors">
-                <Users2 className="h-12 w-12 text-green-400 mb-4" />
+              <div
+                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors">
+                <Users2 className="h-12 w-12 text-green-400 mb-4"/>
                 <h3 className="text-xl font-bold mb-4">Community First</h3>
                 <p className="text-gray-400">Strong focus on community wealth generation and sustainable growth</p>
               </div>
@@ -159,7 +163,6 @@ const DegenCapital = () => {
           </div>
         </section>
 
-        {/* Success Track Record */}
         <section className="py-16 bg-gray-900">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Our Track Record</h2>
@@ -171,7 +174,8 @@ const DegenCapital = () => {
                 ['BOTON', '0.00004', '178x'],
                 ['ZGEN', '0.001', '156x']
               ].map(([name, price, returns]) => (
-                  <div key={name} className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors">
+                  <div key={name}
+                       className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors">
                     <h3 className="text-xl font-bold text-green-400 mb-2">{name}</h3>
                     <p className="text-gray-400">Found at</p>
                     <p className="text-lg font-bold text-white">${price}</p>
@@ -181,23 +185,25 @@ const DegenCapital = () => {
             </div>
           </div>
         </section>
-
-        {/* Portfolio Tracking Section */}
         <section className="py-16">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Live Portfolio Overview</h2>
-            <div className="rounded-xl overflow-hidden border border-green-500/20">
-              <iframe
-                  src="https://debank.com/profile/0x9fb76d37de2ed2c1b339fc4451044aff33049a8a"
-                  className="w-full"
-                  style={{ height: '800px' }}
-                  title="Degen Capital Portfolio"
-              />
+            <div className="flex justify-center">
+              <a
+                  href="https://debank.com/profile/0x9fb76d37de2ed2c1b339fc4451044aff33049a8a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-green-600 to-emerald-600 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 hover:shadow-lg hover:shadow-green-500/20 inline-flex items-center space-x-2"
+              >
+                <span>View Portfolio on DeBank</span>
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
             </div>
           </div>
         </section>
 
-        {/* Revenue Participation */}
         <section className="py-16">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Mr. D NFT Collection</h2>
@@ -240,45 +246,6 @@ const DegenCapital = () => {
                   <div className="flex items-center justify-between p-4 rounded-lg bg-gray-700">
                     <span>Team</span>
                     <span className="text-xl font-bold text-green-400">15%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Tokenomics */}
-        <section className="py-16 bg-gray-900">
-          <div className="container mx-auto px-6">
-            <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Tokenomics</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="p-8 rounded-xl bg-gray-800">
-                <h3 className="text-xl font-bold text-center mb-6">Transaction Tax: 4%</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between p-4 rounded-lg bg-gray-700">
-                    <span>DGC Wallet</span>
-                    <span className="font-bold text-green-400">2%</span>
-                  </div>
-                  <div className="flex items-center justify-between p-4 rounded-lg bg-gray-700">
-                    <span>Liquidity Pool</span>
-                    <span className="font-bold text-green-400">1%</span>
-                  </div>
-                  <div className="flex items-center justify-between p-4 rounded-lg bg-gray-700">
-                    <span>Team</span>
-                    <span className="font-bold text-green-400">1%</span>
-                  </div>
-                </div>
-              </div>
-              <div className="p-8 rounded-xl bg-gray-800">
-                <h3 className="text-xl font-bold mb-6">Token Details</h3>
-                <div className="space-y-6">
-                  <div className="text-center p-6 rounded-lg bg-gray-700">
-                    <p className="text-gray-400 mb-2">Max Supply</p>
-                    <p className="text-3xl font-bold text-green-400">1,000,000 $DGC</p>
-                  </div>
-                  <div className="text-center p-6 rounded-lg bg-gray-700">
-                    <p className="text-gray-400 mb-2">LP Status</p>
-                    <p className="text-3xl font-bold text-green-400">100% Burned</p>
                   </div>
                 </div>
               </div>

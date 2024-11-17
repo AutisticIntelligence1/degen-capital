@@ -185,6 +185,94 @@ const DegenCapital = () => {
             </div>
           </div>
         </section>
+
+        {/* Hot Tokens Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Hot Tokens We're Watching</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div
+                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
+                <div className="absolute top-2 right-2 bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">
+                  Hot 🔥
+                </div>
+                <h3 className="text-xl font-bold text-green-400 mb-4">Gary the Snail</h3>
+                <p className="text-sm text-gray-400 mb-4">Elon's Latest Pet Token</p>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400">Contract Address:</span>
+                  </div>
+                  <div className="p-2 bg-gray-700 rounded-lg break-all text-xs">
+                    0xf0430bd971ee4a63674a2103e21129e9ccf29686
+                  </div>
+                </div>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="text-green-400 font-semibold">Potential: High</span>
+                  <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">Trending</span>
+                </div>
+              </div>
+
+              <div
+                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
+                <div className="absolute top-2 right-2 bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">
+                  Hot 🔥
+                </div>
+                <h3 className="text-xl font-bold text-green-400 mb-4">Bureaucracy</h3>
+                <p className="text-sm text-gray-400 mb-4">Solana's Latest Gem</p>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400">Contract Address:</span>
+                  </div>
+                  <div className="p-2 bg-gray-700 rounded-lg break-all text-xs">
+                    AiZRN7k9n1ursX2rJKuaNX9J2Q4Eq5vtDBmonNsZpump
+                  </div>
+                </div>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="text-green-400 font-semibold">Potential: High</span>
+                  <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">New</span>
+                </div>
+              </div>
+
+              <div
+                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
+                <div className="absolute top-2 right-2 bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">
+                  Hot 🔥
+                </div>
+                <h3 className="text-xl font-bold text-green-400 mb-4">YEN</h3>
+                <p className="text-sm text-gray-400 mb-4">Next Potential Moon</p>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400">Contract Address:</span>
+                  </div>
+                  <div className="p-2 bg-gray-700 rounded-lg break-all text-xs">
+                    8HfFvgutvKBjdbTqm8h6qZ2VSJ3TxwrZxHT3m34Cpump
+                  </div>
+                </div>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="text-green-400 font-semibold">Potential: High</span>
+                  <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">Rising</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 text-center">
+              <p className="text-gray-400 mb-6">Join our community to get real-time updates on these tokens and more
+                opportunities</p>
+              <a
+                  href="https://t.me/+IzONJHxUmdY2ZmRk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 bg-gray-800 px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors"
+              >
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 8.12L16.17 18c-.15.65-.56.85-1.13.53l-3.14-2.31-1.51 1.46c-.17.17-.31.31-.64.31l.23-3.21L14.7 10c.19-.18-.04-.28-.3-.1l-6.07 3.83L5.2 12.7c-.64-.2-.65-.64.13-.95l15.39-5.93c.53-.2 1 .13.83.7z"/>
+                </svg>
+                <span>Join Telegram Community</span>
+              </a>
+            </div>
+          </div>
+        </section>
         <section className="py-16">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Live Portfolio Overview</h2>

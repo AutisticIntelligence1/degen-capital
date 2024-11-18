@@ -1,7 +1,7 @@
 "use client";
 
 import React, {useState, useEffect} from 'react';
-import {Gem, Lock, Users, Eye, Users2, Target} from 'lucide-react';
+import {Eye, Target, Users2} from 'lucide-react';
 
 const DegenCapital = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -66,7 +66,6 @@ const DegenCapital = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18"/>
           </svg>
         </button>
-
         <header className="relative overflow-hidden">
           <div className="absolute inset-0">
             <div className="absolute inset-0 bg-gradient-to-br from-green-900/30 to-emerald-900/30 z-10"></div>
@@ -104,7 +103,6 @@ const DegenCapital = () => {
               </div>
             </div>
           </nav>
-
           <div className="relative container mx-auto px-6 pt-20 pb-24 text-center">
             <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
               Expert-Led Investment Community
@@ -142,11 +140,39 @@ const DegenCapital = () => {
             </div>
           </div>
         </header>
+
+        <section className="py-16">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Why Choose Degen Capital?</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div
+                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors">
+                <Eye className="h-12 w-12 text-green-400 mb-4"/>
+                <h3 className="text-xl font-bold mb-4">Expert Analysis</h3>
+                <p className="text-gray-400">Seasoned professionals identifying high-potential projects before they gain
+                  widespread attention</p>
+              </div>
+              <div
+                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors">
+                <Target className="h-12 w-12 text-green-400 mb-4"/>
+                <h3 className="text-xl font-bold mb-4">Strategic Entry</h3>
+                <p className="text-gray-400">Perfect timing for maximum returns on carefully selected opportunities</p>
+              </div>
+              <div
+                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors">
+                <Users2 className="h-12 w-12 text-green-400 mb-4"/>
+                <h3 className="text-xl font-bold mb-4">Community First</h3>
+                <p className="text-gray-400">Strong focus on community wealth generation and sustainable growth</p>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="py-16">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Hot Tokens We&apos;re Watching</h2>
             <div className="grid md:grid-cols-4 gap-6">
-              <div className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
+              <div
+                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
                 <div className="absolute top-2 right-2 bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">
                   Hot 🔥
                 </div>
@@ -166,7 +192,8 @@ const DegenCapital = () => {
                 </div>
               </div>
 
-              <div className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
+              <div
+                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
                 <div className="absolute top-2 right-2 bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">
                   Hot 🔥
                 </div>
@@ -185,7 +212,6 @@ const DegenCapital = () => {
                   <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">Trending</span>
                 </div>
               </div>
-
               <div className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
                 <div className="absolute top-2 right-2 bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">
                   Hot 🔥
@@ -211,7 +237,7 @@ const DegenCapital = () => {
                   Hot 🔥
                 </div>
                 <h3 className="text-xl font-bold text-green-400 mb-4">YEN</h3>
-                <p className="text-sm text-gray-400 mb-4">Milyenaire</p>
+                <p className="text-sm text-gray-400 mb-4">Next Potential Moon</p>
                 <div className="space-y-2">
                   <div className="flex justify-between items-center">
                     <span className="text-gray-400">Contract Address:</span>
@@ -239,3 +265,4 @@ const DegenCapital = () => {
 };
 
 export default DegenCapital;
+

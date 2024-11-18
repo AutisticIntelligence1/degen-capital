@@ -83,8 +83,8 @@ const DegenCapital = () => {
                 </svg>
                 <span
                     className="text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
-                  Degen Capital
-                </span>
+                Degen Capital
+              </span>
               </div>
               <div className="flex items-center space-x-4">
                 <a href="https://t.me/+IzONJHxUmdY2ZmRk" target="_blank" rel="noopener noreferrer"
@@ -104,6 +104,7 @@ const DegenCapital = () => {
               </div>
             </div>
           </nav>
+
           <div className="relative container mx-auto px-6 pt-20 pb-24 text-center">
             <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
               Expert-Led Investment Community
@@ -112,9 +113,40 @@ const DegenCapital = () => {
               Led by seasoned experts with a proven track record of identifying early-stage opportunities before they
               become mainstream successes.
             </p>
+
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-green-400 mb-4">NFT Launch Countdown</h2>
+              <div className="grid grid-cols-4 gap-4 max-w-2xl mx-auto">
+                {stats.map(({label, value}) => (
+                    <div key={label} className="p-4 rounded-xl bg-gray-800 border border-green-500/20">
+                      <div className="text-3xl font-bold text-green-400">{value}</div>
+                      <div className="text-sm text-gray-400">{label}</div>
+                    </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex justify-center space-x-4">
+              <button
+                  className="bg-gradient-to-r from-green-600 to-emerald-600 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 hover:shadow-lg hover:shadow-green-500/20">
+                Buy $DGC
+              </button>
+              <a
+                  href="https://degen-capital.gitbook.io/degen-capital"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 border border-green-500/20"
+              >
+                View Whitepaper
+              </a>
+            </div>
+          </div>
+        </header>
+        <section className="py-16">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-center mb-12 text-green-400">Hot Tokens We&apos;re Watching</h2>
             <div className="grid md:grid-cols-4 gap-6">
-              <div
-                  className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
+              <div className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
                 <div className="absolute top-2 right-2 bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">
                   Hot 🔥
                 </div>
@@ -134,12 +166,68 @@ const DegenCapital = () => {
                 </div>
               </div>
 
-              <!-- Original tokens sections and rest of the code -->
+              <div className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
+                <div className="absolute top-2 right-2 bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">
+                  Hot 🔥
+                </div>
+                <h3 className="text-xl font-bold text-green-400 mb-4">Gary the Snail</h3>
+                <p className="text-sm text-gray-400 mb-4">Elon&apos;s Latest Pet Token</p>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400">Contract Address:</span>
+                  </div>
+                  <div className="p-2 bg-gray-700 rounded-lg break-all text-xs">
+                    0xf0430bd971ee4a63674a2103e21129e9ccf29686
+                  </div>
+                </div>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="text-green-400 font-semibold">Potential: High</span>
+                  <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">Trending</span>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
+                <div className="absolute top-2 right-2 bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">
+                  Hot 🔥
+                </div>
+                <h3 className="text-xl font-bold text-green-400 mb-4">Bureaucracy</h3>
+                <p className="text-sm text-gray-400 mb-4">Solana&apos;s Latest Gem</p>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400">Contract Address:</span>
+                  </div>
+                  <div className="p-2 bg-gray-700 rounded-lg break-all text-xs">
+                    AiZRN7k9n1ursX2rJKuaNX9J2Q4Eq5vtDBmonNsZpump
+                  </div>
+                </div>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="text-green-400 font-semibold">Potential: High</span>
+                  <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">New</span>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-xl bg-gray-800 border border-green-500/20 hover:border-green-500/40 transition-colors relative overflow-hidden">
+                <div className="absolute top-2 right-2 bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">
+                  Hot 🔥
+                </div>
+                <h3 className="text-xl font-bold text-green-400 mb-4">YEN</h3>
+                <p className="text-sm text-gray-400 mb-4">Milyenaire</p>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400">Contract Address:</span>
+                  </div>
+                  <div className="p-2 bg-gray-700 rounded-lg break-all text-xs">
+                    8HfFvgutvKBjdbTqm8h6qZ2VSJ3TxwrZxHT3m34Cpump
+                  </div>
+                </div>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="text-green-400 font-semibold">Potential: High</span>
+                  <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-sm">Rising</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-
-        <!-- Rest of the sections -->
 
         <footer className="py-8 border-t border-gray-800">
           <div className="container mx-auto px-6 text-center text-gray-400">

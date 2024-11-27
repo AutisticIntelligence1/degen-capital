@@ -2,3 +2,174 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #000000;
+  --surface: #111111;
+  --surface-2: #1E1E1E;
+  --primary: #FF3366;
+  --primary-dark: #E62E5C;
+  --secondary: #FFD700;
+  --accent: #00FFFF;
+  --text: #FFFFFF;
+  --text-secondary: #999999;
+  --border: rgba(255, 51, 102, 0.1);
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+}
+
+.gradient-bg {
+  background: radial-gradient(circle at top right, rgba(255, 51, 102, 0.15), transparent 50%),
+             radial-gradient(circle at bottom left, rgba(255, 215, 0, 0.1), transparent 50%);
+}
+
+.nav-blur {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.surface-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.surface-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 51, 102, 0.2);
+  box-shadow: 0 8px 30px rgba(255, 51, 102, 0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--surface-2);
+  color: var(--text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--surface);
+  border-color: var(--primary);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: var(--primary);
+}
+
+.glow {
+  position: relative;
+}
+
+.glow::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.glow:hover::after {
+  opacity: 0.5;
+}
+
+.feature-icon {
+  background: linear-gradient(135deg, rgba(255, 51, 102, 0.1), rgba(255, 215, 0, 0.1));
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--primary);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+.social-icon {
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.portfolio-link {
+  position: relative;
+  color: var(--primary);
+}
+
+.portfolio-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-link:hover::after {
+  transform: scaleX(1);
+}

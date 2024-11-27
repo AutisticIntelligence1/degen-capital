@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Twitter, Send, Globe, Shield, Gem, ArrowRight } from 'lucide-react';
+import { Send, Globe, Shield, Gem, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
 export default function DegenCapital() {

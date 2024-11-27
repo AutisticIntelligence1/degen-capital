@@ -101,27 +101,27 @@ export default function DegenCapital() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="surface-card p-6">
-              <div className="feature-icon mb-6">
-                <Globe className="h-6 w-6" />
+            <div className="surface-card p-6 rounded-lg">
+              <div className="mb-4">
+                <Globe className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-4">Global Community</h3>
               <p className="text-text-secondary">
                 Join our worldwide community of investors and traders.
               </p>
             </div>
-            <div className="surface-card p-6">
-              <div className="feature-icon mb-6">
-                <Shield className="h-6 w-6" />
+            <div className="surface-card p-6 rounded-lg">
+              <div className="mb-4">
+                <Shield className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-4">Enhanced Security</h3>
+              <h3 className="text-xl font-bold mb-4">Multi-Signature Security</h3>
               <p className="text-text-secondary">
-                Multi-layered security protocols protecting your investments 24/7.
+                Advanced protection through multi-signature wallets, ensuring secure and transparent fund management.
               </p>
             </div>
-            <div className="surface-card p-6">
-              <div className="feature-icon mb-6">
-                <Gem className="h-6 w-6" />
+            <div className="surface-card p-6 rounded-lg">
+              <div className="mb-4">
+                <Gem className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-4">Exclusive NFTs</h3>
               <p className="text-text-secondary">

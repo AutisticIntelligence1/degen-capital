@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Degen Capital",
-  description: "Community-driven investment strategies powered by blockchain technology",
+  description: "Join an elite community of investors where collective wisdom drives exceptional returns",
   icons: {
     icon: [
       {

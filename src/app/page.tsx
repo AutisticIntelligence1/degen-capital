@@ -46,11 +46,11 @@ export default function DegenCapital() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="flex-1 space-y-8">
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                The Future of <span className="gradient-text">Decentralized</span> Investment
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
+                The Future of <br />Community Investing
               </h1>
               <p className="text-xl text-text-secondary">
-                Join the revolution of community-driven investment strategies powered by blockchain technology.
+                Join an elite community of investors where collective wisdom drives exceptional returns.
               </p>
               <div className="flex items-center space-x-4">
                 <a

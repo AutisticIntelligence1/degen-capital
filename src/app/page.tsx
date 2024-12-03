@@ -42,12 +42,12 @@ export default function DegenCapital() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20">
+      <section className="pt-24 pb-12">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-            <div className="flex-1 space-y-8">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
-                The Future of <br />Community Investing
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="flex-1 space-y-6">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 gradient-text leading-tight">
+                The most degenerate crypto hedge fund
               </h1>
               <p className="text-xl text-text-secondary">
                 Join an elite community of investors where collective wisdom drives exceptional returns.
@@ -92,7 +92,7 @@ export default function DegenCapital() {
       </section>
 
       {/* Features Section */}
-      <section className="section-padding" id="investment">
+      <section className="py-12" id="investment">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Why Choose <span className="gradient-text">Degen Capital</span></h2>
@@ -133,7 +133,7 @@ export default function DegenCapital() {
       </section>
 
       {/* NFT Section */}
-      <section className="section-padding bg-surface/50" id="nft">
+      <section className="py-12 bg-surface/50" id="nft">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
@@ -196,7 +196,7 @@ export default function DegenCapital() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding">
+      <section className="py-12">
         <div className="container mx-auto px-6">
           <div className="surface-card p-12 text-center">
             <h2 className="text-4xl font-bold mb-6">
@@ -227,7 +227,7 @@ export default function DegenCapital() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-12">
+      <footer className="border-t border-border py-8">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>

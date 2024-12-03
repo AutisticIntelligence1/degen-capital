@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: #000000;
-  --surface: #111111;
-  --surface-2: #1E1E1E;
-  --primary: #FF3366;
-  --primary-dark: #E62E5C;
-  --secondary: #FFD700;
-  --accent: #00FFFF;
+  --background: #0A0A0A;
+  --surface: #121212;
+  --surface-2: #1A1A1A;
+  --primary: #00FF9D;
+  --primary-dark: #00CC7D;
+  --secondary: #00FFBB;
+  --accent: #00FF9D;
   --text: #FFFFFF;
-  --text-secondary: #999999;
-  --border: rgba(255, 51, 102, 0.1);
+  --text-secondary: #A0A0A0;
+  --border: rgba(0, 255, 157, 0.1);
 }
 
 body {
@@ -22,12 +22,12 @@ body {
 }
 
 .gradient-bg {
-  background: radial-gradient(circle at top right, rgba(255, 51, 102, 0.15), transparent 50%),
-             radial-gradient(circle at bottom left, rgba(255, 215, 0, 0.1), transparent 50%);
+  background: radial-gradient(circle at top right, rgba(0, 255, 157, 0.15), transparent 50%),
+             radial-gradient(circle at bottom left, rgba(0, 255, 187, 0.1), transparent 50%);
 }
 
 .nav-blur {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(10, 10, 10, 0.8);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -41,8 +41,8 @@ body {
 
 .surface-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 51, 102, 0.2);
-  box-shadow: 0 8px 30px rgba(255, 51, 102, 0.1);
+  border-color: rgba(0, 255, 157, 0.2);
+  box-shadow: 0 8px 30px rgba(0, 255, 157, 0.1);
 }
 
 .gradient-text {
@@ -119,7 +119,7 @@ body {
 }
 
 .feature-icon {
-  background: linear-gradient(135deg, rgba(255, 51, 102, 0.1), rgba(255, 215, 0, 0.1));
+  background: linear-gradient(135deg, rgba(0, 255, 157, 0.1), rgba(0, 255, 187, 0.1));
   padding: 1rem;
   border-radius: 1rem;
   color: var(--primary);

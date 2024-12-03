@@ -11,7 +11,7 @@ export default function DegenCapital() {
       <nav className="fixed w-full nav-blur z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 pt-4">
               <Image
                 src="/logo1.jpg"
                 alt="Degen Capital Logo"
@@ -42,34 +42,34 @@ export default function DegenCapital() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-12">
+      <section className="pt-28 pb-16">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="flex-1 space-y-6">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 gradient-text leading-tight">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+            <div className="flex-1 space-y-8">
+              <h1 className="text-4xl md:text-6xl font-bold mb-12 gradient-text leading-tight">
                 The most degenerate crypto hedge fund
               </h1>
               <p className="text-xl text-text-secondary">
-                Join an elite community of investors where collective wisdom drives exceptional returns.
+                Join an elite community of investors.
               </p>
               <div className="flex items-center space-x-4">
                 <a
                   href="https://degen-capital.gitbook.io/degen-capital/introduction/quickstart"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary"
+                  className="primary-button inline-flex items-center"
                 >
                   Learn More
-                  <ArrowRight className="h-4 w-4 ml-2 inline-block" />
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </a>
                 <a
                   href="https://debank.com/profile/0x9fb76d37de2ed2c1b339fc4451044aff33049a8a"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-secondary"
+                  className="primary-button inline-flex items-center"
                 >
                   Live Portfolio
-                  <Globe className="h-4 w-4 ml-2 inline-block" />
+                  <Globe className="h-4 w-4 ml-2" />
                 </a>
               </div>
             </div>
@@ -94,8 +94,8 @@ export default function DegenCapital() {
       {/* Features Section */}
       <section className="py-12" id="investment">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Why Choose <span className="gradient-text">Degen Capital</span></h2>
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4 mt-[-1rem]">Why Choose <span className="gradient-text">Degen Capital</span></h2>
             <p className="text-text-secondary max-w-2xl mx-auto">
               We combine cutting-edge technology with proven investment strategies to maximize returns for our community.
             </p>
@@ -161,10 +161,10 @@ export default function DegenCapital() {
                   href="https://twitter.com/degencapital"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary"
+                  className="primary-button inline-flex items-center"
                 >
                   Follow Updates
-                  <svg className="h-4 w-4 ml-2 inline-block" viewBox="0 0 24 24" fill="currentColor">
+                  <svg className="h-4 w-4 ml-2" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                   </svg>
                 </a>
@@ -196,7 +196,7 @@ export default function DegenCapital() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12">
+      <section className="py-8">
         <div className="container mx-auto px-6">
           <div className="surface-card p-12 text-center">
             <h2 className="text-4xl font-bold mb-6">
@@ -210,16 +210,16 @@ export default function DegenCapital() {
                 href="https://twitter.com/degencapital"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary"
+                className="primary-button inline-flex items-center"
               >
                 Follow on Twitter
-                <svg className="h-4 w-4 ml-2 inline-block" viewBox="0 0 24 24" fill="currentColor">
+                <svg className="h-4 w-4 ml-2" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
               </a>
-              <a href="https://t.me/degencapital" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+              <a href="https://t.me/degencapital" target="_blank" rel="noopener noreferrer" className="primary-button inline-flex items-center">
                 Join Telegram
-                <Send className="h-4 w-4 ml-2 inline-block" />
+                <Send className="h-4 w-4 ml-2" />
               </a>
             </div>
           </div>
@@ -228,7 +228,7 @@ export default function DegenCapital() {
 
       {/* Footer */}
       <footer className="border-t border-border py-8">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 pb-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">

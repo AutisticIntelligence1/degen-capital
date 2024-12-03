@@ -6,13 +6,13 @@
   --background: #0A0A0A;
   --surface: #121212;
   --surface-2: #1A1A1A;
-  --primary: #00FF9D;
-  --primary-dark: #00CC7D;
-  --secondary: #00FFBB;
-  --accent: #00FF9D;
+  --primary: #32FF76;
+  --primary-dark: #00D861;
+  --secondary: #00FF95;
+  --accent: #32FF76;
   --text: #FFFFFF;
   --text-secondary: #A0A0A0;
-  --border: rgba(0, 255, 157, 0.1);
+  --border: rgba(50, 255, 118, 0.1);
 }
 
 body {
@@ -22,8 +22,8 @@ body {
 }
 
 .gradient-bg {
-  background: radial-gradient(circle at top right, rgba(0, 255, 157, 0.15), transparent 50%),
-             radial-gradient(circle at bottom left, rgba(0, 255, 187, 0.1), transparent 50%);
+  background: radial-gradient(circle at top right, rgba(50, 255, 118, 0.15), transparent 50%),
+             radial-gradient(circle at bottom left, rgba(0, 255, 149, 0.1), transparent 50%);
 }
 
 .nav-blur {
@@ -36,34 +36,54 @@ body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 1rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
 }
 
 .surface-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(0, 255, 157, 0.2);
-  box-shadow: 0 8px 30px rgba(0, 255, 157, 0.1);
+  border-color: rgba(50, 255, 118, 0.2);
+  box-shadow: 0 8px 30px rgba(50, 255, 118, 0.15);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  text-shadow: 0 2px 30px rgba(50, 255, 118, 0.2);
 }
 
-.btn-primary {
+.primary-button {
   background: var(--primary);
-  color: white;
+  color: #000000;
+  font-weight: 700;
   padding: 0.75rem 1.5rem;
-  border-radius: 0.75rem;
-  font-weight: 600;
-  transition: all 0.2s ease;
+  border-radius: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 140px;
+  border: 1px solid rgba(50, 255, 118, 0.2);
+  box-shadow: 0 4px 20px rgba(50, 255, 118, 0.2),
+              inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary:hover {
+.primary-button:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(50, 255, 118, 0.3),
+              inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.primary-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(50, 255, 118, 0.2);
 }
 
 .btn-secondary {
@@ -119,7 +139,7 @@ body {
 }
 
 .feature-icon {
-  background: linear-gradient(135deg, rgba(0, 255, 157, 0.1), rgba(0, 255, 187, 0.1));
+  background: linear-gradient(135deg, rgba(0, 217, 89, 0.1), rgba(0, 240, 102, 0.1));
   padding: 1rem;
   border-radius: 1rem;
   color: var(--primary);
@@ -139,11 +159,11 @@ body {
 }
 
 .social-icon {
-  color: var(--text-secondary);
-  transition: all 0.2s ease;
+  color: var(--primary);
+  transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-  color: var(--primary);
+  color: var(--primary-dark);
   transform: translateY(-2px);
 }

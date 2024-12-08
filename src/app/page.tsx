@@ -263,7 +263,7 @@ export default function DegenCapital() {
               </ul>
               <div className="flex items-center space-x-4 mt-8">
                 <button className="secondary-button">
-                  More Soon
+                  Coming Soon
                 </button>
               </div>
             </div>

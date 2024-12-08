@@ -3,25 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --background: #040606;
-  --primary: #00F593;
-  --primary-hover: #00ff9d;
-  --secondary: #00B371;
-  --surface: #080C0A;
-  --text: #FFFFFF;
+  --background: #0A1512;
+  --primary: #00B371;
+  --primary-dark: #009961;
+  --secondary: #34D399;
+  --accent: #059669;
+  --text: #F1F5F3;
   --text-secondary: #94A8A1;
-  --border: rgba(255, 255, 255, 0.08);
+  --surface: #0F1F1B;
+  --surface-dark: #0D1A17;
+  --border: rgba(0, 179, 113, 0.1);
 }
 
 @layer base {
   body {
+    background: var(--background);
+    color: var(--text);
     @apply bg-background text-text antialiased;
   }
 }
 
 @layer components {
   .gradient-bg {
-    @apply relative bg-[radial-gradient(ellipse_at_top,#0C1410_0%,#040606_100%)];
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
   }
 
   .gradient-bg::before {
@@ -31,24 +35,54 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-primary via-[#00ff9d] to-secondary bg-clip-text text-transparent;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-wrap: balance;
     word-break: break-word;
     hyphens: auto;
   }
 
   .primary-button {
-    @apply inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-br from-primary to-secondary text-background font-semibold 
+    background: var(--primary);
+    color: var(--background);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    @apply inline-flex items-center px-6 py-3 rounded-lg font-semibold 
            transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-primary/20
            focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 cursor-pointer
            shadow-md shadow-primary/10 backdrop-blur-sm;
   }
 
+  .primary-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+  }
+
   .secondary-button {
+    background: transparent;
+    color: var(--primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease;
     @apply inline-flex items-center px-6 py-3 rounded-lg border-2 border-primary/80 text-primary font-semibold 
            transition-all duration-300 hover:bg-primary/5 hover:scale-[1.02] hover:border-primary
            focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 cursor-pointer
            backdrop-blur-sm shadow-md shadow-black/5;
+  }
+
+  .secondary-button:hover {
+    background: rgba(0, 179, 113, 0.1);
+    transform: translateY(-1px);
   }
 
   .social-icon {
@@ -56,9 +90,20 @@
   }
 
   .surface-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
     @apply bg-surface/50 rounded-lg p-6 backdrop-blur-lg border border-border 
            transition-all duration-300 hover:border-primary/20 hover:bg-surface/70
            shadow-xl shadow-black/10;
+  }
+
+  .surface-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 179, 113, 0.08);
+    border-color: rgba(0, 179, 113, 0.2);
   }
 
   .nav-blur {
@@ -76,13 +121,61 @@
            opacity-0 group-hover:opacity-100 transition-opacity duration-300;
   }
 
-  @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .glass-effect {
+    background: rgba(15, 31, 27, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
   }
 
   .animate-float {
     animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .hero-gradient {
+    background: radial-gradient(circle at top right, rgba(0, 179, 113, 0.15), transparent 50%),
+               radial-gradient(circle at bottom left, rgba(52, 211, 153, 0.1), transparent 50%);
+  }
+
+  .card-highlight {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(0, 179, 113, 0.1),
+      transparent
+    );
+    transition: 0.5s;
+  }
+
+  .card-highlight:hover::before {
+    left: 100%;
   }
 }

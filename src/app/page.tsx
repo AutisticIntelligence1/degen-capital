@@ -1,10 +1,12 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Send, Globe, Shield, Gem, ArrowRight, Users, Trophy, Twitter } from 'lucide-react';
 import Image from 'next/image';
 
 export default function DegenCapital() {
+  const [copied, setCopied] = useState(false);
+
   return (
     <div className="min-h-screen gradient-bg">
       {/* Navigation */}
@@ -26,16 +28,26 @@ export default function DegenCapital() {
               <div className="flex items-center space-x-2 bg-surface-transparent backdrop-blur-sm px-3 py-1.5 rounded-lg border border-[var(--border)] hover:border-[var(--border-hover)] transition-colors">
                 <span className="text-text-secondary text-sm">CA:</span>
                 <code className="text-primary font-mono text-sm">0xf9784980a84bca67964c9560d576d6bf6ea41d87</code>
-                <button 
-                  onClick={() => navigator.clipboard.writeText('0xf9784980a84bca67964c9560d576d6bf6ea41d87')}
-                  className="text-text-secondary hover:text-primary transition-colors"
-                  title="Copy to clipboard"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                  </svg>
-                </button>
+                <div className="relative">
+                  <button 
+                    onClick={() => {
+                      navigator.clipboard.writeText('0xf9784980a84bca67964c9560d576d6bf6ea41d87');
+                      setCopied(true);
+                      setTimeout(() => setCopied(false), 2000);
+                    }}
+                    className="text-text-secondary hover:text-primary transition-colors"
+                    title="Copy to clipboard"
+                  >
+                    {copied ? (
+                      <span className="text-primary text-xs">Copied!</span>
+                    ) : (
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                    )}
+                  </button>
+                </div>
               </div>
               <a
                 href="https://www.dextools.io/app/en/ether/pair-explorer/0x273cb35e72e98f3065e0b6bd037958fa58bb49fd?t=1733676979526"
@@ -46,8 +58,8 @@ export default function DegenCapital() {
                 <Image
                   src="/Brand_DEXTools_Dark.png"
                   alt="DEXTools"
-                  width={96}
-                  height={96}
+                  width={72}
+                  height={72}
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 />
               </a>
@@ -101,8 +113,8 @@ export default function DegenCapital() {
                     <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors">Microcap-Powered Index Fund</h3>
                     <p className="text-text-secondary text-sm">
                       DGC is a microcap-powered index fund that trades a basket of high r/r assets in AI, RWA and MEMES. 
-                      By simply holding DGC you gain expert exposure to some of the most alpha investments in the 
-                      constantly-changing crypto space.
+                      By simply holding DGC you gain exposure to some of the most alpha investments in the 
+                       crypto space.
                     </p>
                   </div>
 
@@ -111,7 +123,7 @@ export default function DegenCapital() {
                     <p className="text-text-secondary text-sm">
                       When you hold DGC you automatically become part of the collective which regularly distributes 
                       a large portion of the profits directly to you. The more DGC you hold, the more of these profits 
-                      you receive. Hold and make the best of the last bull run with the best track-records of the space.
+                      you receive. Hold and make the best of the bull run.
                     </p>
                   </div>
                 </div>
@@ -197,19 +209,15 @@ export default function DegenCapital() {
               <ul className="space-y-1.5 text-text-secondary text-sm">
                 <li className="flex items-center space-x-2">
                   <ArrowRight className="h-3 w-3 text-primary flex-shrink-0" />
-                  <span>ATOR - privacy</span>
+                  <span>ATOR</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <ArrowRight className="h-3 w-3 text-primary flex-shrink-0" />
-                  <span>AMT - layer 1 mobile mining</span>
+                  <span>KAS</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <ArrowRight className="h-3 w-3 text-primary flex-shrink-0" />
-                  <span>XNA - layer 1 AI</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <ArrowRight className="h-3 w-3 text-primary flex-shrink-0" />
-                  <span>DNX - Layer 1 computing</span>
+                  <span>NEURAL</span>
                 </li>
               </ul>
             </div>

@@ -9,17 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#040F0F',
-        primary: '#00FF88',
-        'primary-hover': '#33FF9F',
-        secondary: '#80FFB9',
-        surface: '#0A1F1F',
-        text: '#FFFFFF',
-        'text-secondary': '#A0AEC0',
-        border: 'rgba(255, 255, 255, 0.1)',
+        background: 'var(--background)',
+        primary: 'var(--primary)',
+        'primary-hover': 'var(--primary-hover)',
+        secondary: 'var(--secondary)',
+        surface: 'var(--surface)',
+        text: 'var(--text)',
+        'text-secondary': 'var(--text-secondary)',
+        border: 'var(--border)',
       },
       animation: {
-        'float': 'float 6s ease-in-out infinite',
+        float: 'float 6s ease-in-out infinite',
       },
       keyframes: {
         float: {

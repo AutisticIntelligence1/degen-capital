@@ -65,7 +65,7 @@ export default function DegenCapital() {
                     <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors">ALL-STAR Degen LEGENDS Unite</h3>
                     <p className="text-text-secondary text-sm">
                       ALL-STAR degen LEGENDS get together for the first time to give you $DGC. As a group, via consensus, 
-                      we&apos;re gonna trade this fund this year and next, up to 20M.
+                      we're gonna trade this fund this year and next, up to 20M.
                     </p>
                   </div>
 
@@ -159,12 +159,12 @@ export default function DegenCapital() {
               </div>
               <p className="text-text-secondary text-sm mb-3">
                 Our core team includes high-octane investors like Degenerator, wooww etc. etc. who specialize in 
-                finding gems before they hit the influencer&apos;s circuit. Working with them are the top crypto-experts 
+                finding gems before they hit the influencer's circuit. Working with them are the top crypto-experts 
                 & alpha gems hunters of the collective, each of them being accountable with over 5 years of personal 
                 track record.
               </p>
               <p className="text-text-secondary text-sm mb-3">
-                It doesn&apos;t get any better than this. We gave you:
+                It doesn't get any better than this. We gave you:
               </p>
               <ul className="space-y-1.5 text-text-secondary text-sm">
                 <li className="flex items-center space-x-2">
@@ -193,7 +193,7 @@ export default function DegenCapital() {
                 <h3 className="text-lg font-bold">Best Tokenomics</h3>
               </div>
               <p className="text-text-secondary text-sm">
-                Our unique system of NFTs make for the ultimate revenue share model with flywheel & 
+                Our unique system of NFT's make for the ultimate revenue share model with flywheel & 
                 deflationary tokenomics. This is our gift to the community.
               </p>
             </div>

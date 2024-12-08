@@ -3,25 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --background: #001810;
-  --background-transparent: rgba(0, 24, 16, 0.8);
+  --background: #000804;
+  --background-transparent: rgba(0, 8, 4, 0.9);
   --primary: #00FF88;
   --primary-hover: #33FF9F;
   --secondary: #80FFB9;
-  --surface: #002A1C;
-  --surface-transparent: rgba(0, 42, 28, 0.5);
-  --surface-light: rgba(0, 42, 28, 0.3);
+  --surface: #001208;
+  --surface-transparent: rgba(0, 18, 8, 0.7);
+  --surface-light: rgba(0, 18, 8, 0.4);
   --text: #FFFFFF;
   --text-secondary: #A0AEC0;
   --border: rgba(255, 255, 255, 0.1);
-  --border-hover: rgba(0, 255, 136, 0.2);
+  --border-hover: rgba(255, 255, 255, 0.2);
   --border-light: rgba(255, 255, 255, 0.05);
   --primary-transparent: rgba(0, 255, 136, 0.1);
+  --primary-glow: rgba(0, 255, 136, 0.05);
 }
 
 @layer base {
   body {
     @apply bg-background text-text antialiased;
+    background-image: 
+      radial-gradient(circle at 50% 0%, var(--primary-glow) 0%, transparent 50%),
+      radial-gradient(circle at 0% 50%, var(--primary-glow) 0%, transparent 50%),
+      radial-gradient(circle at 100% 50%, var(--primary-glow) 0%, transparent 50%);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 

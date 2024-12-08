@@ -23,6 +23,34 @@ export default function DegenCapital() {
               <span className="text-lg font-bold gradient-text">Degen Capital</span>
             </div>
             <div className="hidden md:flex items-center space-x-4">
+              <div className="flex items-center space-x-2 bg-surface-transparent backdrop-blur-sm px-3 py-1.5 rounded-lg border border-[var(--border)] hover:border-[var(--border-hover)] transition-colors">
+                <span className="text-text-secondary text-sm">CA:</span>
+                <code className="text-primary font-mono text-sm">0xf9784980a84bca67964c9560d576d6bf6ea41d87</code>
+                <button 
+                  onClick={() => navigator.clipboard.writeText('0xf9784980a84bca67964c9560d576d6bf6ea41d87')}
+                  className="text-text-secondary hover:text-primary transition-colors"
+                  title="Copy to clipboard"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+              <a
+                href="https://www.dextools.io/app/en/ether/pair-explorer/0x273cb35e72e98f3065e0b6bd037958fa58bb49fd?t=1733676979526"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <Image
+                  src="/Brand_DEXTools_Dark.png"
+                  alt="DEXTools"
+                  width={96}
+                  height={96}
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                />
+              </a>
               <a
                 href="https://t.me/DGC_Portal"
                 target="_blank"
@@ -65,7 +93,7 @@ export default function DegenCapital() {
                     <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors">ALL-STAR Degen LEGENDS Unite</h3>
                     <p className="text-text-secondary text-sm">
                       ALL-STAR degen LEGENDS get together for the first time to give you $DGC. As a group, via consensus, 
-                      we're gonna trade this fund this year and next, up to 20M.
+                      we&apos;re gonna trade this fund this year and next, up to 20M.
                     </p>
                   </div>
 
@@ -159,12 +187,12 @@ export default function DegenCapital() {
               </div>
               <p className="text-text-secondary text-sm mb-3">
                 Our core team includes high-octane investors like Degenerator, wooww etc. etc. who specialize in 
-                finding gems before they hit the influencer's circuit. Working with them are the top crypto-experts 
+                finding gems before they hit the influencer&apos;s circuit. Working with them are the top crypto-experts 
                 & alpha gems hunters of the collective, each of them being accountable with over 5 years of personal 
                 track record.
               </p>
               <p className="text-text-secondary text-sm mb-3">
-                It doesn't get any better than this. We gave you:
+                It doesn&apos;t get any better than this. We gave you:
               </p>
               <ul className="space-y-1.5 text-text-secondary text-sm">
                 <li className="flex items-center space-x-2">
@@ -193,7 +221,7 @@ export default function DegenCapital() {
                 <h3 className="text-lg font-bold">Best Tokenomics</h3>
               </div>
               <p className="text-text-secondary text-sm">
-                Our unique system of NFT's make for the ultimate revenue share model with flywheel & 
+                Our unique system of NFTs make for the ultimate revenue share model with flywheel & 
                 deflationary tokenomics. This is our gift to the community.
               </p>
             </div>

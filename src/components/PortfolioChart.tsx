@@ -116,7 +116,7 @@ export default function PortfolioChart() {
         display: false
       },
       tooltip: {
-        mode: 'index',
+        mode: 'nearest' as const,
         intersect: false,
         backgroundColor: 'rgba(0, 0, 0, 0.8)',
         titleColor: '#ffffff',

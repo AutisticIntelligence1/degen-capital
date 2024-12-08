@@ -173,7 +173,7 @@ export default function DegenCapital() {
                 <h3 className="text-lg font-bold">A Cult Community</h3>
               </div>
               <p className="text-text-secondary text-sm">
-                Since 2017, we have grown into an all-star trading collective, with a cult following of 500. 
+                Since 2017, we have grown into an all-star trading collective, with a cult following of almost 500 members. 
                 DGC community is where gems appear before anywhere else, and where an assortment of up-and-coming 
                 influencers grind along with discerning traders.
               </p>
